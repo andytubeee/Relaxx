@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <audio autoplay id="music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
     <h1 style="font-size: 70px; margin-top: 40px; color: #f8f7ed;">Relaxx</h1>
 
     <div class="container">
@@ -23,6 +27,11 @@
         </div>
 
         <div class="gradient-circle"></div>
+
+
+    </div>
+    <div class="button_cont" style="align-items: center; cursor: pointer;" onclick="pauseOnPress();">
+        <p id="muteButton" target="_blank" rel="nofollow noopener">Mute</p>
     </div>
     <script src="script.js"></script>
 </body>
