@@ -8,11 +8,6 @@ const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
 var isMute = true;
-music.play();
-
-function playMusic() {
-    music.play();
-}
 
 breathAnimation();
 
@@ -34,12 +29,12 @@ setInterval(breathAnimation, totalTime);
 
 function pauseOnPress() {
     if (!isMute) {
-        mute.innerHTML = "Unmute ▶";
+        mute.innerHTML = "Unmute 🔊";
         isMute = true;
 
         music.pause();
     } else {
-        mute.innerHTML = "Mute";
+        mute.innerHTML = "Mute 🔇";
         isMute = false;
 
         music.play();
