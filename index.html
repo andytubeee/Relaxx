@@ -10,10 +10,8 @@
     <title>Relaxx</title>
 </head>
 
-<body onload="document.getElementById('music').play();">
-    <audio autoplay id="music" loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
+<body onload="playMusic();">
+    <embed src="music.mp3" hidden="true" autostart="true" loop="true" id="music">
 
     <h1 style="font-size: 70px; margin-top: 40px; color: #f8f7ed;">Relaxx</h1>
 

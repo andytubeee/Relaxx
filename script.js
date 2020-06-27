@@ -8,6 +8,11 @@ const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
 var isMute = false;
+music.play();
+
+function playMusic() {
+    music.play();
+}
 
 breathAnimation();
 
