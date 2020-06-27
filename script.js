@@ -29,7 +29,7 @@ setInterval(breathAnimation, totalTime);
 
 function pauseOnPress() {
     if (!isMute) {
-        mute.innerHTML = "Unmute";
+        mute.innerHTML = "Unmute ▶";
         isMute = true;
 
         music.pause();
