@@ -7,7 +7,7 @@ const totalTime = 7500;
 const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
-var isMute = false;
+var isMute = true;
 music.play();
 
 function playMusic() {
