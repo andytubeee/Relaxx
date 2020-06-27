@@ -6,7 +6,7 @@ var makeItRain = function () {
     var drops = "";
     var backDrops = "";
 
-    while (increment < 100) {
+    while (increment < 400) {
         //couple random numbers to use for various randomizations
         //random number between 98 and 1
         var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
@@ -29,11 +29,19 @@ $('.splat-toggle.toggle').on('click', function () {
     makeItRain();
 });
 
+$('body').toggleClass('splat-toggle');
+$('.splat-toggle.toggle').toggleClass('active');
+makeItRain();
+
 $('.back-row-toggle.toggle').on('click', function () {
     $('body').toggleClass('back-row-toggle');
     $('.back-row-toggle.toggle').toggleClass('active');
     makeItRain();
 });
+
+$('body').toggleClass('back-row-toggle');
+$('.back-row-toggle.toggle').toggleClass('active');
+makeItRain();
 
 $('.single-toggle.toggle').on('click', function () {
     $('body').toggleClass('single-toggle');
